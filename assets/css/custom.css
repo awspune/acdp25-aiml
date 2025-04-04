@@ -1,0 +1,357 @@
+/* Hero Section Styles */
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #232f3e 0%, #1a1a1a 100%);
+    color: white;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-tagline {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.event-details {
+    margin-bottom: 40px;
+}
+
+.event-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.event-details i {
+    margin-right: 10px;
+    color: #ff9900;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.timer-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+.timer-item span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.timer-item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.theme-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.theme-item:hover {
+    transform: translateY(-5px);
+}
+
+.theme-item i {
+    font-size: 2.5rem;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+/* Benefits Section Styles */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.benefit-item i {
+    font-size: 2.5rem;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+/* Registration Section Styles */
+.registration-section {
+    padding: 80px 0;
+}
+
+.ticket-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.ticket-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.ticket-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.ticket-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #232f3e;
+    margin-bottom: 20px;
+}
+
+.ticket-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.ticket-card ul li {
+    margin-bottom: 10px;
+}
+
+/* Sponsor Section Styles */
+.sponsor-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+/* Agenda Section Styles */
+.agenda-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.agenda-timeline {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.agenda-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.agenda-item h3 {
+    color: #232f3e;
+    margin-bottom: 20px;
+}
+
+.agenda-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.agenda-item ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.agenda-item ul li:last-child {
+    border-bottom: none;
+}
+
+/* Speakers Section Styles */
+.speakers-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Sponsors Section Styles */
+.sponsors-section {
+    padding: 80px 0;
+}
+
+.sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Sponsor Blogs Section Styles */
+.sponsor-blogs {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+    padding: 80px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Venue Section Styles */
+.venue-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.venue-details {
+    margin-bottom: 30px;
+}
+
+.venue-amenities {
+    margin-top: 20px;
+}
+
+.venue-amenities p {
+    margin: 10px 0;
+}
+
+.venue-amenities i {
+    color: #ff9900;
+    margin-right: 10px;
+}
+
+#venue-map {
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Organizers Section Styles */
+.organizers-section {
+    padding: 80px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Code of Conduct Section Styles */
+.coc-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    padding: 80px 0;
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+/* Feedback Section Styles */
+.feedback-section {
+    padding: 80px 0;
+    background-color: #232f3e;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+    
+    .event-details p {
+        font-size: 1rem;
+    }
+    
+    .timer-item {
+        min-width: 80px;
+        padding: 15px;
+    }
+    
+    .timer-item span {
+        font-size: 2rem;
+    }
+    
+    .ticket-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sponsor-logos {
+        gap: 20px;
+    }
+    
+    .themes-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #venue-map {
+        height: 300px;
+        margin-top: 30px;
+    }
+} 
