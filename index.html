@@ -21,6 +21,8 @@
 		<link rel="stylesheet" href="assets/css/vendor/odometer.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/custom.css">
 
 		<!--=====  JS SCRIPT LINK =======-->
 		<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
@@ -34,14 +36,8 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/main.css">
-
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="assets/css/custom.css">
 
 		<!-- Google Maps API -->
 		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
@@ -50,7 +46,91 @@
 			a:hover {
 				color: #fff;
 				text-decoration: underline;
-			}
+				}
+				/* General Mobile Styles */
+				@media (max-width: 768px) {
+					.hero-title {
+						font-size: 2rem;
+					}
+
+					.hero-tagline {
+						font-size: 1rem;
+					}
+
+					.timer-item {
+						min-width: 80px;
+						padding: 10px;
+					}
+
+					.themes-grid {
+						grid-template-columns: repeat(2, 1fr);
+					}
+
+					.benefits-grid {
+						grid-template-columns: 1fr;
+					}
+
+					.footer-logo-area img {
+						max-width: 100px;
+					}
+
+					.footer1-section-area ul {
+						flex-direction: column;
+						gap: 10px;
+					}
+				}
+
+				/* Tablet Styles */
+				@media (max-width: 992px) {
+					.hero-title {
+						font-size: 2.5rem;
+					}
+
+					.hero-tagline {
+						font-size: 1.2rem;
+					}
+
+					.themes-grid {
+						grid-template-columns: repeat(3, 1fr);
+					}
+
+					.benefits-grid {
+						grid-template-columns: repeat(2, 1fr);
+					}
+				}
+
+				/* Desktop Styles */
+				@media (min-width: 1200px) {
+					.hero-title {
+						font-size: 3.5rem;
+					}
+
+					.hero-tagline {
+						font-size: 1.5rem;
+					}
+				}
+
+				/* Additional Media Queries for Better Responsiveness */
+				@media (max-width: 576px) {
+					.hero-title {
+						font-size: 1.5rem;
+					}
+					.hero-tagline {
+						font-size: 0.9rem;
+					}
+					.footer-logo-area img {
+						max-width: 80px;
+					}
+					.themes-grid {
+						grid-template-columns: 1fr;
+					}
+				}
+
+				/* Ensure Images are Responsive */
+				img {
+					max-width: 100%;
+					height: auto;
+				}
 		</style>
 	</head>
 	<body class="homepage1-body">
@@ -253,18 +333,15 @@
 										</ul>
 									</div>
 									<div class="btn-area">
-										<!-- <div class="search-icon header__search header-search-btn">
-											<a href="#"><img src="assets/img/icons/search1.svg" alt="" /></a>
-										</div> -->
 										<ul>
 											<li>
 												<a href="https://konfhub.com/acdpune25-aiml" target="_blank" title="Get Tickets"><i class="fa-solid fa-ticket"></i></a>
 											</li>
 											<li>
-												<a href="#"><i class="fa-brands fa-instagram"></i></a>
+												<a href="https://www.instagram.com/awspune/" target="_blank" style="color: #ff9900;"><i class="fa-brands fa-instagram"></i></a>
 											</li>
 											<li>
-												<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+												<a href="https://www.linkedin.com/company/aws-user-group-pune/" target="_blank" style="color: #ff9900;"><i class="fa-brands fa-linkedin-in"></i></a>
 											</li>
 											<li>
 												<a href="https://www.meetup.com/AWS-User-Group-Pune/" target="_blank" class="m-0"><i class="fa-brands fa-meetup"></i></a>
@@ -698,10 +775,10 @@
                         <a href="https://konfhub.com/acdpune25-aiml" target="_blank" title="Get Tickets" style="color: #ff9900; font-size: 1.5rem;"><i class="fa-solid fa-ticket"></i></a>
                     </li>
                     <li>
-                        <a href="#" style="color: #ff9900; font-size: 1.5rem;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/awspune/" target="_blank" style="color: #ff9900; font-size: 1.5rem;"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="#" style="color: #ff9900; font-size: 1.5rem;"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/company/aws-user-group-pune/" target="_blank" style="color: #ff9900; font-size: 1.5rem;"><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                     <li>
                         <a href="mailto:team@awsugpune.org" style="color: #ff9900; font-size: 1.5rem;"><i class="fa-regular fa-envelope"></i></a>
