@@ -847,3 +847,22 @@ p, h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
     }
 }
+
+/* Responsive styles for the 'Why Attend?' section with increased specificity and !important */
+@media (max-width: 576px) {
+    .why-attend-section .benefits-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-attend-section .benefits-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .why-attend-section .benefits-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
