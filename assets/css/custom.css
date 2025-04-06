@@ -722,15 +722,57 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive Styles for Why Attend */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .benefits-grid {
-        grid-template-columns: 1fr !important; /* Single column for smaller screens */
+        grid-template-columns: 1fr;
     }
     .benefit-item {
-        padding: 20px !important;
+        padding: 20px;
     }
     .benefit-item i {
-        font-size: 2rem !important;
+        font-size: 2rem;
+    }
+    .benefit-item h4 {
+        font-size: 1.2rem;
+    }
+    .benefit-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .benefit-item {
+        padding: 25px;
+    }
+    .benefit-item i {
+        font-size: 2.2rem;
+    }
+    .benefit-item h4 {
+        font-size: 1.3rem;
+    }
+    .benefit-item p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .benefits-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .benefit-item {
+        padding: 30px;
+    }
+    .benefit-item i {
+        font-size: 2.5rem;
+    }
+    .benefit-item h4 {
+        font-size: 1.5rem;
+    }
+    .benefit-item p {
+        font-size: 1.1rem;
     }
 }
 
