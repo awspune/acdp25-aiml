@@ -336,6 +336,21 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Completely disable animations and transitions for the Venue Section */
+.venue-section,
+.venue-section * {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Ensure iframe is static */
+#venue-map iframe {
+    animation: none !important;
+    transition: none !important;
+}
+
 /* Organizers Section Styles */
 .organizers-section {
     padding: 80px 0;
