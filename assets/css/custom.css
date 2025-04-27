@@ -357,10 +357,65 @@
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 30px;
-    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    margin-bottom: 5px;
+    height: auto; /* Allow dynamic height */
+}
+
+.team-member p {
+    color: #666;
+    line-height: 1.5;
+    height: auto; /* Allow dynamic height */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-wrap: wrap; /* Allow wrapping of items */
+        gap: 20px; /* Reduce gap */
+    }
+
+    .team-member {
+        flex: 1 1 calc(50% - 20px); /* Two members per row */
+        max-width: calc(50% - 20px);
+        text-align: center;
+    }
+
+    .team-member img {
+        width: 150px; /* Reduce image size */
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .team-member {
+        flex: 1 1 100%; /* Full width for each member */
+        max-width: 100%;
+    }
+
+    .team-member img {
+        width: 120px; /* Further reduce image size */
+        height: 120px;
+    }
 }
 
 /* Code of Conduct Section Styles */
